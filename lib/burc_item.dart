@@ -1,3 +1,5 @@
+import 'package:burc/burc_details_page.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'modals/burc.dart';
@@ -14,6 +16,13 @@ class BurcItem extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: ListTile(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                        builder: (context) =>
+                            BurcDetail(SelectedBurc: ListelenecekBurc)));
+              },
               trailing: Icon(Icons.arrow_forward_ios),
               leading: Image.asset(
                 "assets/images/" + ListelenecekBurc.burcSmallImage,

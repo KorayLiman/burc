@@ -34,7 +34,7 @@ class BurcListesi extends StatelessWidget {
           Strings.BURC_TARIHLERI[i],
           Strings.BURC_GENEL_OZELLIKLERI[i],
           Strings.BURC_ADLARI[i].toLowerCase() + "${i + 1}.png",
-          Strings.BURC_ADLARI[i].toLowerCase() + "_buyuk$i.png"));
+          Strings.BURC_ADLARI[i].toLowerCase() + "_buyuk${i + 1}.png"));
     }
     return temp;
   }
