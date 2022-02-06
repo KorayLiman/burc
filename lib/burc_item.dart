@@ -17,11 +17,7 @@ class BurcItem extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: ListTile(
               onTap: () {
-                Navigator.push(
-                    context,
-                    CupertinoPageRoute(
-                        builder: (context) =>
-                            BurcDetail(SelectedBurc: ListelenecekBurc)));
+                Navigator.pushNamed(context, "/BurcDetay", arguments: ListelenecekBurc);
               },
               trailing: Icon(Icons.arrow_forward_ios),
               leading: Image.asset(

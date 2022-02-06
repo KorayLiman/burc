@@ -19,7 +19,8 @@ class _BurcDetailState extends State<BurcDetail> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    DominantColorForAppBar();
+    WidgetsBinding.instance!
+        .addPostFrameCallback((timeStamp) => DominantColorForAppBar());
   }
 
   @override
